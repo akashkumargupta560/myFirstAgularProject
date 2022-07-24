@@ -11,8 +11,15 @@ export class SignUpComponent implements OnInit {
   name:string='akash';
   email:string='akash@gmail.com';
   password:string='akash@123';
-
+  isShowData:boolean = false;
   ngOnInit(): void {
+  }
+
+  showData(){
+    this.isShowData = true;
+  }
+  hideData(){
+    this.isShowData = false;
   }
 
 }
